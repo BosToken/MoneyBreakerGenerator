@@ -1,5 +1,5 @@
 var serve = {
-    servePort : 5000
+    servePort : process.env.PORT || 5000
 }
 
 module.exports = serve;
