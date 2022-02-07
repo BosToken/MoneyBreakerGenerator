@@ -1,0 +1,1 @@
+const Pages = require("./JS/allPage");

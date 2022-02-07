@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../Partials/head", {title}) %>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="font.css" />
+    <style>
+      .circular-image {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 50%;
+        border-color: 2px solid black;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("../Partials/header") %>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card shadow">
+            <div class="circular-image border border-dark border-5">
+              <img src="/Assets/Faiz.jpg" class="card-img-top"/>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">@BosToken</h3>
+              <p class="card-text">
+                "Salman banyak bacot !!!"
+              </p>
+              <a href="https://github.com/BosToken" class="btn btn-dark" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="mailto:faizdiandra11@gmail.com" class="btn btn-danger" target="_blank"><i class="far fa-envelope"></i> Gmail</a>
+              <a href="https://wa.me/6281232857502/?text=Hi%20!" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card shadow">
+            <div class="circular-image border border-dark border-5">
+              <img src="/Assets/Salman.png" class="card-img-top">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">@alfarise</h3>
+              <p class="card-text">
+                "Bacot Faiz waifumu matian..!"
+              </p>
+              <a href="https://github.com/alfarise" class="btn btn-dark" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="mailto:muhammadsalmanalfarisi82@gmail.com" class="btn btn-danger" target="_blank"><i class="far fa-envelope" ></i> Email</a>
+              <a href="https://wa.me/6281515526235/?text=Hi%20!" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("../Partials/footer") %>
+  </body>
+</html>
