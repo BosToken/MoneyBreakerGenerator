@@ -1,9 +1,9 @@
 .circular-image {
-    position: relative;
     width: 350px;
     height: 350px;
     overflow: hidden;
     border-radius: 50%;
     border-color: 2px solid black;
     margin: 10px auto;
+    position: relative;
 }
