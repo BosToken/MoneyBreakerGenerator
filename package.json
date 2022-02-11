@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bostoken/waifu-gatcha": "^1.0.15",
+    "@bostoken/waifu-gatcha": "^1.1.9",
     "blade": "^3.3.1",
     "body-parser": "^1.19.1",
     "ejs": "^3.1.6",
