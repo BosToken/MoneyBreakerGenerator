@@ -11,10 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bostoken/waifu-gatcha": "^1.1.9",
     "blade": "^3.3.1",
     "body-parser": "^1.19.1",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
+    "inspirational-quotes": "^2.0.1",
     "nodemon": "^2.0.15",
     "numeral": "^2.0.6",
     "pug": "^3.0.2"

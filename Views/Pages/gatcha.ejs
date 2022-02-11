@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../Partials/head", {title}) %>
+</head>
+  <body>
+    <%- include("../Partials/header") %>
+    <div class="container">
+      <center>
+        <h3 class="mb-3">Gatcha Generator</h3>
+
+        <div class="card mb-5" style="max-width: 680px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<%= pictureChar %>" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title mt-5"><%= nameChar %></h3>
+                <p class="card-text"><small class="text-muted"><%= grade %></small></p>
+                <p class="card-text mb-1 mt-4">From anime:</p>
+                <h4><%= animeName %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="get-waifu">GET WAIFU !!!</button>
+      </center>
+
+
+      <!-- <div class="card text-center shadow">
+        <div class="card-header">
+          Your Waifu
+        </div>
+        <div class="card-body">
+          <img src="<%= pictureChar %>" class="card-img-top" alt="..." style="width: 300px; border-radius: 10px;">
+          <h5 class="card-title"><%= nameChar %></h5>
+          <p class="card-text">
+            <%= animeName %>
+            <br>
+            <%= grade %>
+          </p>  
+        </div>
+      </div> -->
+
+    </div>
+    <%- include("../Partials/footer") %>
+  </body>
+</html>

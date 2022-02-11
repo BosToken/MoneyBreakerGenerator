@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../Partials/head", {title}) %>
+  </head>
+  <body>
+    <%- include("../Partials/header") %>
+    <div class="container">
+      <center>
+        <h3>
+          Aplikasi Sederhana
+          <br>
+          Pemecah Uang
+        </h3>
+      </center>
+
+      <form method="post" action="/money">
+        <label for="uang" class="form-label">Masukan Uang Anda</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">RP</span>
+          <input type="text" id="uang" name="uang" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </div>
+
+        <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Proses</button>
+      </form>
+
+      <hr>
+      <br>
+
+      
+      <div class="card shadow" style="width: 100%; border-radius: 10px;">
+        <div class="card-body">
+          <h3>Uang Anda : <%= uangAnda %></h3>
+        </div>
+      </div>
+
+      <br>
+      <h5>Pecahan Yang Anda Terima : </h5>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">RP</th>
+            <th scope="col">Uang Pecahan</th>
+            <th scope="col">Jumlah Yang Anda Terima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RP</td>
+            <td>100.000</td>
+            <td><%= seratusRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>50.000</td>
+            <td><%= limapuluhRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>20.000</td>
+            <td><%= duapuluhRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>10.000</td>
+            <td><%= sepuluhRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>5.000</td>
+            <td><%= limaRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>2.000</td>
+            <td><%= duaRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>1.000</td>
+            <td><%= seRB %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>500</td>
+            <td><%= limaRT %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>200</td>
+            <td><%= duaRT %></td>
+          </tr>
+          <tr>
+            <td>RP</td>
+            <td>100</td>
+            <td><%= seRT %></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h5>Sisa Uang Yang Belum Terconvert : <%= sisa %></h5>
+    </div>
+    <%- include("../Partials/footer") %>
+    
+  </body>
+</html>
